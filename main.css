@@ -1,11 +1,17 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Lato|Zilla+Slab:300,400');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: url(images/turtle.jpg) no-repeat top left fixed;
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'Lato', sans-serif;
 }
+
 h1,
 h2 {
   font-family: 'Zilla Slab', serif;
@@ -41,7 +47,8 @@ img {
 }
 /* masthead styling */
 .masthead {
-  margin: 15px 35% 0 15px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 2.5em;
 }
 .masthead h1 {
@@ -109,5 +116,22 @@ nav {
   line-height: 1.5;
 }
 .card-content {
-  padding: 1.4em;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    display: flex;
+    flex: 1;
+  }
+  .masthead {
+    margin-left: -25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper ul {
+    display: block;
+    flex: 1;
+  }
 }
